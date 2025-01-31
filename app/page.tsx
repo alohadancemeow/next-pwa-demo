@@ -1,4 +1,6 @@
 import Image from "next/image";
+import PushNotificationManager from "./PushNotifiationManager";
+import InstallPrompt from "./InstallPrompt";
 
 export default function Home() {
   return (
@@ -96,6 +98,9 @@ export default function Home() {
           Go to nextjs.org →
         </a>
       </footer>
+
+      <PushNotificationManager />
+      <InstallPrompt />
     </div>
   );
 }
